@@ -4,4 +4,4 @@
     )
 }}
 
-select * from RAW.GLOBALMART.CUSTOMERS
+select * from {{ source('globalmart', 'customers') }}
